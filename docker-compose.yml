@@ -42,8 +42,8 @@ services:
 
   web:
     build:
-      context: ../bot-front
-      dockerfile: Web.dockerfile
+      context: ../web
+      dockerfile: Web.Dockerfile
     image: webchat
     container_name: webchat-app
     depends_on:
