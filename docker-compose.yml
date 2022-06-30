@@ -3,7 +3,7 @@ services:
   container-bot:
     build:
       context: .
-      dockerfile: bot.dockerfile
+      dockerfile: bot.Dockerfile
     ports:
       - 5005:5005
     depends_on:
@@ -21,7 +21,7 @@ services:
   container-server-bot:
     build:
       context: .
-      dockerfile: server.dockerfile
+      dockerfile: server.Dockerfile
     image: rasa-actions:latest
     ports:
       - 5055:5055
