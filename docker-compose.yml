@@ -39,3 +39,20 @@ services:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: root
       MONGO_INITDB_DATABASE: sprint4
+
+  web:
+    build:
+      context: ../bot-front
+      dockerfile: Web.dockerfile
+    image: webchat
+    container_name: webchat-app
+    depends_on:
+      - "chatbot"
+    networks: 
+      - rasa-network
+    ports: 
+      - 3000:3000
+
+networks: 
+    rasa-network:
+        driver: bridge
