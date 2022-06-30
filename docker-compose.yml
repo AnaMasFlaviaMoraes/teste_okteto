@@ -47,7 +47,7 @@ services:
     image: webchat
     container_name: webchat-app
     depends_on:
-      - "chatbot"
+      - container-bot
     networks: 
       - rasa-network
     ports: 
