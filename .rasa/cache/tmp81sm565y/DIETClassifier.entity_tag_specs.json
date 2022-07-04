@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-film_name",
+      "2": "I-film_name",
+      "3": "L-film_name",
+      "4": "U-film_name",
+      "5": "B-genero",
+      "6": "I-genero",
+      "7": "L-genero",
+      "8": "U-genero",
+      "9": "B-name",
+      "10": "I-name",
+      "11": "L-name",
+      "12": "U-name",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-film_name": 1,
+      "I-film_name": 2,
+      "L-film_name": 3,
+      "U-film_name": 4,
+      "B-genero": 5,
+      "I-genero": 6,
+      "L-genero": 7,
+      "U-genero": 8,
+      "B-name": 9,
+      "I-name": 10,
+      "L-name": 11,
+      "U-name": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

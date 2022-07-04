@@ -1,0 +1,31 @@
+Criando o ambiente:
+ ---> conda create --name rasa_ambiente python = 3.8 
+Ativando o ambiente:
+ ---> conda activate rasa_ambiente
+
+Instalando as depências:
+ ---> conda install ujson
+ ---> conda install tensorflow
+
+Instalando o RASA:
+ ---> pip install rasa
+
+Criando primeiro modelo de chatbot:
+ ---> rasa init
+
+Baixando o pacote do spacy para mudar linguagem para português:
+ ---> pip install -U spacy
+ ---> python -m spacy download pt_core_news_sm
+
+
+Problemas encontrados:
+A API do Star Wars está toda em inglês, mesmo que o bot seja em português para que ele consiga localizar uma informação sobre determinado filme, personagem, planeta ou qualquer coisa relacionada, teria que ser em inglês. Para facilitar a compreensão a busca do bot é através dos números dos episódios (1, 2, 3, 4, 5 e 6)
+
+user Mongo: ana-compass
+senha: starwars123
+
+Dotenv:
+Para instalar: pip install python-dotenv
+
+
+rasa run --cors "*" ---> proteção contra acessos não seguros

@@ -22,6 +22,17 @@ nlu:
    - quero saber sobre o episodio [2](film_name)
    - episodio [3](film_name)
    - Episódio [4](film_name)
+   - velozes e furiosos (film_name)
+   - Era uma vez Hollywood (film_name)
+
+- intent: inform_film_name
+  examples: |
+   - eu gosto do genero [ficcao cientifica](genero)
+   - genero [acao](genero)
+   - [aventura](genero)
+   - prefiro [terror](genero)
+   - gosto de [aventura] (genero)
+   - só assisto [comedia](genero)
 
 - intent: inform_user_name 
   examples: |
@@ -38,6 +49,11 @@ nlu:
     - [Claudio](name)
     - [daniel](name)
     - [ana](name)
+    - [Alysson](name)
+    - [Juan](name)
+    - [fernando](name)
+    - [Tatiele] (name)
+    - [Suelen] (name)
 
 
 - intent: goodbye

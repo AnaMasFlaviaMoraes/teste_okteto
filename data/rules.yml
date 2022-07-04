@@ -6,6 +6,7 @@ rules:
   steps:
   - intent: greet
   - action: utter_name
+  - action: utter_submit
   - action: user_name_form
   - active_loop: user_name_form
 
@@ -47,5 +48,6 @@ rules:
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
+  - action: user_name_form
+  - active_loop: null
   - action: utter_goodbye
-

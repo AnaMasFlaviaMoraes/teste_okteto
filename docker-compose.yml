@@ -27,7 +27,7 @@ services:
       - 5055:5055
     volumes:
       - ./actions:/app/actions
-    public: true
+
   mongodb:
     image: mongo
     container_name: db
@@ -42,12 +42,12 @@ services:
 
   web:
     build:
-      context: .
-      dockerfile: Web.Dockerfile
+      context: ../web
+      dockerfile: web.Dockerfile
     image: webchat
     container_name: webchat-app
     depends_on:
-      - container-bot
+      - "chatbot"
     networks: 
       - rasa-network
     ports: 
