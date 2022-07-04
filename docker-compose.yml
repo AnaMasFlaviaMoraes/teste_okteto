@@ -42,12 +42,12 @@ services:
 
   web:
     build:
-      context: ../web
+      context: ./web/
       dockerfile: web.Dockerfile
     image: webchat
     container_name: webchat-app
     depends_on:
-      - "chatbot"
+      - container-bot
     networks: 
       - rasa-network
     ports: 
