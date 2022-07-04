@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: bot.Dockerfile
     ports:
-      - 5005:5005
+      - 8080:8080
     depends_on:
       - container-server-bot
     volumes:
@@ -18,6 +18,8 @@ services:
       - --credentials
       - credentials.yml
       - --debug
+      - --port
+      - "8080"
   container-server-bot:
     build:
       context: .
