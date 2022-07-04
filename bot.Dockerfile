@@ -8,3 +8,5 @@ RUN python -m spacy download pt_core_news_sm
 
 # Seguindo as boas práticas não executo o código com user root
 USER 1001
+
+EXPOSE 5055
